@@ -23,6 +23,10 @@ body {
     flex-direction: row;
 }
 
+.skills-div h2 {
+    padding-left: 16px;
+}
+
 .hard-skills {
     width: 50%;
 }
