@@ -3,6 +3,7 @@ html {
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: 'Ubuntu', 'sans-serif';
 }
 
 body {
@@ -75,7 +76,22 @@ body {
     text-align: center;
 }
 
+.portfolio-pagina {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .portfolio-cursos .titulo-curso {
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio-pagina .titulo-pagina {
     height: 30px;
     display: flex;
     flex-direction: column;
@@ -89,5 +105,10 @@ body {
 
 .curso-practico-javascript {
     grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.kukaramangoPage {
+    grid-column: 3/4;
     grid-row: 1/2;
 }
