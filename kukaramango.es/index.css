@@ -1,8 +1,8 @@
 :root {
-    --text-main-color: #FFEFD6;
-    --text-second-color: #CFB997;
-    --background-main-color: #0E5E6F;
-    --background-second-color: #3A8891;
+    --text-main-color: #121f3d;
+    --text-second-color: #24385b;
+    --background-main-color: white;
+    --background-second-color: #FFEFD6;
 }
 
 html {
@@ -23,14 +23,35 @@ body {
     align-items: center;    
 }
 
+.navbar {
+    width: 100vw;
+    height: 60px;
+}
+
+.main-image {
+    width: 100%;
+    height: 300px;
+    background-image: url(./assets/images/CE0060b.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-image {
+    opacity: 1;
+}
+
 .title {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    max-width: 800px;
+    align-items: center;
 }
 
 .greetings {
     text-align: center;
+    width: 90%;
+    max-width: 800px;
+    color: var(--text-main-color);
 }
 
 .intro-container {
@@ -39,6 +60,7 @@ body {
     align-items: center;
     width: 90%;
     align-self: center;
+    max-width: 800px;
 }
 
 .intro-container img {
@@ -52,6 +74,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     list-style: none;
     flex-wrap: wrap;
     max-width: 800px;
@@ -63,7 +86,15 @@ body {
 }
 
 .github-icon img {
-    background-color: white;
+    background-color: var(--text-main-color);
+    border-radius: 4px;
+}
+
+.platzi-icon img {
+    background-color: var(--background-main-color);
+    box-sizing: border-box;
+    padding: 4px;
+    width: 50px;
     border-radius: 4px;
 }
 
@@ -113,6 +144,15 @@ body {
 
 .skills ul li p {
     padding: 0 0 0 8px;
+}
+
+.skills a {
+    text-decoration: none;
+    color: var(--text-second-color);
+}
+
+.skills a:active {
+    color: var(--text-second-color)
 }
 
 .portfolio {
