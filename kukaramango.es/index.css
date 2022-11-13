@@ -246,6 +246,7 @@ body {
 }
 
 footer {
+    background-color: var(--background-main-color);
     box-sizing: border-box;
     width: 100%;
     height: 60px;
@@ -254,4 +255,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 8px;
+    position: fixed;
+    bottom: 0;
 }

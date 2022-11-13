@@ -4,11 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./courses.css">
     <title>Certificados Obtenidos</title>
 </head>
 <body>
-    <h1>Certficados de cursos aprobados</h1>
-    <p>Hola, en este apartado podrás encontrar algunos de los certificados de cursos aprobados, la mayoría obtenidos en <a href="https://platzi.com/">PLATZI</a>, te recomiendo ampliamente esta plataforma para mejorar tus habilidades.<br>
-    También te anexo el <a href="https://platzi.com/p/hp_692c/">link</a> a mi perfil en esta plataforma.</p>
+    <nav class="navbar">
+        <aside class="left-side">
+            <a href="../index.html">
+                <img src="./images/kukaramango-badge.png" alt="logo-kukaramango">
+            </a>
+        </aside>
+        <aside class="right-side">
+            <div class="home right-item">Home</div>
+            <div class="about right-item">About</div>
+            <div class="habilities right-item">Habilidades</div>
+            <div class="portfolio right-item">Porfolio</div>
+            <div class="dark-mode right-item"></div>
+        </aside>
+    </nav>
+
+    <section class="main-section">
+        <h1>Certficados de cursos aprobados</h1>
+        <p class="courses-into">Hola, en este apartado podrás encontrar algunos de los certificados de cursos aprobados, la mayoría obtenidos en <a href="https://platzi.com/">PLATZI</a>, te recomiendo ampliamente esta plataforma para mejorar tus habilidades.<br>
+        También te anexo el <a href="https://platzi.com/p/hp_692c/">link</a> a mi perfil en esta plataforma.</p>
+    </section>
+
+    <section class="skills">
+        <div class="skills-div">
+            <div class="hard-skills">   
+                <p><h2>Hard Skills</h2></p>         
+                <ul class="courses-container">
+                    <div class="courses-description">
+                        <li class="curso-definitivo-de-html-y-css"><a href="https://platzi.com/p/hp_692c/curso/2008-html-css/diploma/detalle/" target="_blank"> 
+                            <img src="../assets/images/certificates/diploma-html-css.png" alt="curso-definitivo-de-html-y-css">
+                        </a>
+                        <p>Curso definitivo de HTML y CSS</p></li>
+                    </div>
+                    <li class="icons icons--css"><img src="./assets/images/icons8-css3-48.png" alt="css-icon"><p>CSS</p></li>
+                    <li class="icons icons--javascript"><img src="./assets/images/icons8-javascript-48.png" alt="javascript-icon"><p>JavaScript</p></li>
+                    <li class="icons icons--react"><img src="./assets/images/icons8-reaccionar-40.png" alt="react-icon"><p>React</p></li>
+                    <li class="icons icons--tailwind"><img src="./assets/images/icons8-tailwind-css-48.png" alt="tailwind-icon"><p>Tailwind</p></li>
+                </ul>
+            </div>
+            
+            <div class="soft-skills">    
+                <p><h2>Soft Skills</h2></p>          
+                <ul>
+                    <li class="icons icons--html"><img src="./assets/images/icons8-english-64.png" alt="html-icon"><p>English (B2 - Level)</p></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <aside class="footer-left">Página creada por Iván Ballín</aside>
+        <aside class="footer-right">Kukaramango  2022</aside>
+    </footer>
 </body>
 </html>
