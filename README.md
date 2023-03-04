@@ -1,2 +1,2 @@
 # kukaramango.es
-Repositorio de mi pággit ina Web kukaramango.es
+Repositorio de mi página Web kukaramango.com
