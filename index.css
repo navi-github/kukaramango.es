@@ -24,7 +24,7 @@ body {
 }
 
 .navbar {
-    width: 100%;
+    width: 90%;
     height: 60px;
     display: flex;
     flex-direction: row;
@@ -88,6 +88,7 @@ body {
     padding: 8px;
     height: 200px;
     width: 200px;
+    border: 5px solid var(--text-main-color);
 }
 
 .social-icons {
@@ -119,7 +120,7 @@ body {
 }
 
 .skills {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,8 +133,8 @@ body {
     flex-direction: row;
 }
 
-.skills-div h2 {
-    padding-left: 16px;
+.skills h2 {
+    text-align: center;
 }
 
 .hard-skills {
@@ -148,6 +149,8 @@ body {
 
 .skills ul {
     list-style: none;
+    padding: 0;
+    margin: 0 auto;
 }
 
 .skills ul li { 
@@ -259,10 +262,53 @@ footer {
 }
 
 @media (max-width:500px) {
+    body {
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0;
+        border: 0;
+        max-width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar {
+        width: 90%;
+    }
+
+    .navbar  .right-side{
+        display: none;
+    }
+
+    .left-side a img {
+        margin: 0 auto;
+        padding: 4px;
+    }
+
     .portfolio-container{
         display: flex;
         overflow-x: scroll;
         overscroll-behavior-x: contain;
         scroll-snap-type: x proximity;
+    }
+
+    .title .social-icons {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .skills {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .skills-div {
+        align-self: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        flex-wrap: wrap;
     }
 }
